@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Warden Registration</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+  <div class="login-container">
+    <h2>Warden Registration</h2>
+    <form action="/warden-submit" method="post">
+      <input type="text" name="name" placeholder="Warden Name" required>
+      <input type="tel" name="contact" placeholder="Contact Number" maxlength="10" required>
+      <input type="text" name="hostel_number" placeholder="Hostel Number / Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+
+    <div class="login-link">
+      Already have an account? <a href="warden_login.html">Login here</a>
+    </div>
+  </div>
+</body>
+</html>

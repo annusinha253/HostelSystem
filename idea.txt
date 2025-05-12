@@ -1,0 +1,2 @@
+#ROUGH IDEA!
+student-- details displaying of the student from the database

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Girl's Hostel</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+      color: #003366;
+    }
+
+    header {
+      background-color: white;
+      color: #003366;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .hostel-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .hostel-info img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      border-radius: 5px;
+    }
+
+    .text-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .hostel-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .hostel-address,
+    .university-affiliation {
+      font-size: 14px;
+    }
+
+    .university-affiliation {
+      font-style: italic;
+      margin-top: 4px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .buttons button {
+      padding: 8px 16px;
+      border: none;
+      background-color: #003366;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+
+    .buttons button:hover {
+      background-color: #00509e;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .main-content {
+      padding: 0px;
+    }
+
+    .main-content p {
+      background: #003366;
+      padding: 20px;
+      border-radius: 0px;
+      color: #ffffff;
+    }
+
+    .announcement-section {
+      position: fixed;
+      top: 60%;
+      right: 0;
+      transform: translateY(-50%);
+      background-color: #ffefcc;
+      color: #333;
+      padding: 20px;
+      border-left: 10px solid #ff9900;
+      width: 250px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+
+    .announcement-section h2 {
+      margin-top: 0;
+    }
+
+    .announcement-section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .announcement-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .ribbon-container {
+      margin: 20px;
+      max-width: 1000px;
+    }
+
+    .ribbon {
+      display: block;
+      background-color: #000000;
+      color: white;
+      padding: 12px 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      border-radius: 4px;
+      position: relative;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+    }
+
+    .ribbon::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 10px;
+      height: 100%;
+      background-color: #ff9900;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    .ribbon:hover {
+      background-color: #00509e;
+      transform: translateX(5px);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hostel-info">
+      <img src="image/arka_jain_logo.jpeg" alt="Arka Jain University Logo">
+      <div class="text-info">
+        <div class="hostel-name">RENU AWAS GIRL'S HOSTEL</div>
+        <div class="hostel-address">Tisco Housing Society, Shridungri Gamharia, Jamshedpur ZIP-832108</div>
+        <div class="university-affiliation">Affiliated with Arka Jain University</div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button onclick="location.href='student_login.html'">Student Login</button>
+      <button onclick="location.href='warden_login.html'">Warden Login</button>
+      <button onclick="location.href='admin_login.html'">Admin Login</button>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <p>Providing safe, comfortable, and university-affiliated accommodation for girls in the heart of Jamshedpur.</p>
+  </div>
+
+  <div class="ribbon-container">
+    <div class="ribbon">Hostel Facilities</div>
+    <a href="documents/rules.pdf" target="_blank" class="ribbon">Guidelines</a>
+    <div class="ribbon">Mess Menu/Timings</div>
+    <div class="ribbon">Application Form</div>
+  </div>
+
+  <div class="announcement-section">
+    <h2>Announcements / Notices</h2>
+    <ul>
+      <li>🗓️ Hostel gate timings updated to 9:30 PM.</li>
+      <li>🧹 Room inspection scheduled for 20th April 2025.</li>
+      <li>📢 Warden meeting with students on 18th April at 5 PM.</li>
+    </ul>
+  </div>
+
+  <script>
+    function studentLogin() {
+      alert('Student Login button clicked!');
+    }
+
+    function wardenLogin() {
+      alert('Warden Login button clicked!');
+    }
+
+    function adminLogin() {
+      alert('Admin Login button clicked!');
+    }
+  </script>
+
+</body>
+</html>
